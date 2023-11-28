@@ -19,7 +19,8 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
   align-items: center;
   padding: 20px 0;
 }
@@ -48,6 +49,10 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+main input, select {
+  font-family: 'Montserrat';
 }
 
 main .chars {
@@ -106,7 +111,7 @@ main .chars .chars-container {
 main button {
   font-family: 'Montserrat', 'Roboto', 'sans serif';
   display: block;
-  margin: 20px auto;
+  margin: 60px auto;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -115,6 +120,13 @@ main button {
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  text-transform: uppercase;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  /* text-transform: uppercase; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  /* box-shadow: 0 0 10px rgba(161, 251, 142, 0.4); */
+  box-shadow: 0 0 10px rgba(0, 176, 200, 0.4);
+  transition: 0.4s;
+}
+
+main button:hover {
+  transform: scale(0.96);
 }
